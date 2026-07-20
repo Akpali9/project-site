@@ -390,7 +390,7 @@ function Hero() {
 }
 
 // ── graduants ──────────────────────────────────────────────────────────────────
-function graduants() {
+function Graduants() {
   return (
     <section id="graduants" className="section-pad" style={{ background: BG_PANEL }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
