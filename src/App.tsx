@@ -413,7 +413,7 @@ function Graduants() {
               <div style={{ padding: 24 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 14 }}>
                   <div style={{ width: 28, height: 1, background: GOLD }} />
-                  <span style={{ color: GOLD, fontSize: 10, letterSpacing: '0.25em', textTransform: 'uppercase' }}>Graduate</span>
+                  <span style={{ color: GOLD, fontSize: 10, letterSpacing: '0.25em', textTransform: 'uppercase' }}>graduant</span>
                 </div>
                 <h3 style={{ fontFamily: SERIF, color: TEXT_CREAM, fontSize: 'clamp(18px,3vw,22px)', fontWeight: 700, marginBottom: 10, lineHeight: 1.2 }}>{g.name}</h3>
                 <p style={{ color: TEXT_MUTED, fontSize: 14, marginBottom: 20, fontStyle: 'italic', lineHeight: 1.6 }}>"{g.aspiration}"</p>
