@@ -787,7 +787,7 @@ export default function App() {
       <GlobalStyles />
       <Nav />
       <Hero />
-      <graduants />
+      <Graduants />
       <Schedule />
       <Videos />
       <Campus />
