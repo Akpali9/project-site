@@ -1,6 +1,23 @@
 import { useState } from 'react'
 import { QRCodeSVG } from 'qrcode.react'
 
+// ── Import local images ──────────────────────────────────────────────────────
+import grad1 from './images/graduant1.jpg'
+import grad2 from './images/graduant2.jpg'
+import grad3 from './images/graduant3.jpg'
+import grad4 from './images/graduant4.jpg'
+import grad5 from './images/graduant5.jpg'
+import grad6 from './images/graduant6.jpg'
+
+import libraryImg from './images/library.jpg'
+import labImg from './images/lab.jpg'
+import classroomImg from './images/classroom.jpg'
+
+// ── Import local videos ──────────────────────────────────────────────────────
+import aiVideo1 from './images/ai-video1.mp4'
+import aiVideo2 from './images/ai-video2.mp4'
+import aiVideo3 from './images/ai-video3.mp4'
+
 // ── Types ──────────────────────────────────────────────────────────────────────
 type Square = 'X' | 'O' | null
 
@@ -11,49 +28,49 @@ const graduants = [
     name: 'Amara Osei',
     aspiration: 'AI Engineer at a global tech firm',
     dob: 'March 12, 2007',
-    photo: 'https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=400&h=400&fit=crop&auto=format',
+    photo: grad1,
   },
-   {
+  {
     id: 7,
     name: 'Amara Osei',
     aspiration: 'AI Engineer at a global tech firm',
     dob: 'March 12, 2007',
-    photo: 'https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=400&h=400&fit=crop&auto=format',
+    photo: grad1, // duplicate – you can replace with another image if needed
   },
   {
     id: 2,
     name: 'Esi Mensah',
     aspiration: 'Full-Stack Software Developer',
     dob: 'January 22, 2008',
-    photo: 'https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=400&h=400&fit=crop&auto=format',
+    photo: grad2,
   },
   {
     id: 3,
     name: 'Kwame Asante',
     aspiration: 'Data Scientist & Machine Learning Researcher',
     dob: 'July 5, 2007',
-    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&auto=format',
+    photo: grad3,
   },
   {
     id: 4,
     name: 'Abena Darko',
     aspiration: 'UX Designer & Product Innovator',
     dob: 'November 14, 2007',
-    photo: 'https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=400&fit=crop&auto=format',
+    photo: grad4,
   },
   {
     id: 5,
     name: 'Yaw Adjei',
     aspiration: 'Tech Entrepreneur & Startup Founder',
     dob: 'April 3, 2008',
-    photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&auto=format',
+    photo: grad5,
   },
   {
     id: 6,
     name: 'Akosua Boateng',
     aspiration: 'Cybersecurity Analyst & Researcher',
     dob: 'September 8, 2007',
-    photo: 'https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?w=400&h=400&fit=crop&auto=format',
+    photo: grad6,
   },
 ]
 
@@ -74,41 +91,46 @@ const SCHEDULE = [
   { time: '06:00 PM', event: 'Reception & Networking', icon: '🥂' },
 ]
 
+// Now using local videos
 const AI_VIDEOS = [
   {
-    id: 'kCc8FmEb1nY',
+    id: 'local1',
     title: 'Neural Networks: Zero to Hero',
     channel: 'Andrej Karpathy',
     description: 'Building a character-level language model entirely from scratch — exactly what we explored in class.',
+    src: aiVideo1,
   },
   {
-    id: 'aircAruvnKk',
+    id: 'local2',
     title: 'But what is a Neural Network?',
     channel: '3Blue1Brown',
     description: 'The visual intuition behind neural networks that made everything click for us.',
+    src: aiVideo2,
   },
   {
-    id: 'OFS90-FX6pg',
+    id: 'local3',
     title: 'Machine Learning for Everyone',
     channel: 'StatQuest',
     description: 'Clear, fun explainers on the core ML algorithms we applied in our AI projects.',
+    src: aiVideo3,
   },
 ]
 
+// Campus photos now use local images
 const SCHOOL_PHOTOS = [
   {
     label: 'Library',
-    url: 'https://images.unsplash.com/photo-1741707596397-efaae09503b5?w=900&h=600&fit=crop&auto=format',
+    url: libraryImg,
     caption: 'Our state-of-the-art library — a sanctuary for curious minds',
   },
   {
     label: 'Science Lab',
-    url: 'https://images.unsplash.com/photo-1613271752699-ede48a285196?w=900&h=600&fit=crop&auto=format',
+    url: labImg,
     caption: 'Where hypotheses become discoveries',
   },
   {
     label: 'Classroom',
-    url: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=900&h=600&fit=crop&auto=format',
+    url: classroomImg,
     caption: 'Every great journey began right here',
   },
 ]
@@ -389,7 +411,7 @@ function Hero() {
   )
 }
 
-// ── graduants ──────────────────────────────────────────────────────────────────
+// ── Graduants ──────────────────────────────────────────────────────────────────
 function Graduants() {
   return (
     <section id="graduants" className="section-pad" style={{ background: BG_PANEL }}>
@@ -461,7 +483,7 @@ function Schedule() {
   )
 }
 
-// ── AI Videos ─────────────────────────────────────────────────────────────────
+// ── AI Videos (uses local video files) ───────────────────────────────────────
 function Videos() {
   const [activeId, setActiveId] = useState<string | null>(null)
 
@@ -478,27 +500,27 @@ function Videos() {
             >
               <div style={{ position: 'relative', paddingBottom: '56.25%', background: '#050810', overflow: 'hidden' }}>
                 {activeId === v.id ? (
-                  <iframe
-                    style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', border: 'none' }}
-                    src={`https://www.youtube.com/embed/${v.id}?autoplay=1`}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title={v.title}
+                  <video
+                    controls
+                    autoPlay
+                    style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}
+                    src={v.src}
                   />
                 ) : (
                   <div
-                    style={{ position: 'absolute', inset: 0, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
+                    style={{ position: 'absolute', inset: 0, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0e1a' }}
                     onClick={() => setActiveId(v.id)}
                   >
-                    <img src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`} alt={`Thumbnail for ${v.title}`}
-                      style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', opacity: 0.55, transition: 'opacity 0.3s' }}
-                    />
+                    {/* You can add a poster image here if you have one: 
+                        <img src={v.poster} alt="..." style={{ position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover', opacity:0.5 }} /> 
+                    */}
                     <div style={{ position: 'relative', zIndex: 1, width: 60, height: 60, borderRadius: '50%', background: 'rgba(201,168,76,0.92)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 24px rgba(201,168,76,0.4)', transition: 'transform 0.2s' }}
                       onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.1)')}
                       onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
                     >
                       <svg width="22" height="22" viewBox="0 0 24 24" fill={BG_DARK}><path d="M8 5v14l11-7z" /></svg>
                     </div>
+                    <p style={{ position: 'absolute', bottom: 20, color: TEXT_MUTED, fontSize: 14, letterSpacing: '0.1em' }}>Click to play</p>
                   </div>
                 )}
               </div>
