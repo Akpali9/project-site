@@ -5,7 +5,7 @@ import { QRCodeSVG } from 'qrcode.react'
 type Square = 'X' | 'O' | null
 
 // ── Data ───────────────────────────────────────────────────────────────────────
-const GRADUATES = [
+const graduants = [
   {
     id: 1,
     name: 'Amara Osei',
@@ -188,8 +188,8 @@ function GlobalStyles() {
       /* Sections */
       .section-pad { padding:100px 24px; }
 
-      /* Graduates */
-      .graduates-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:28px; }
+      /* graduants */
+      .graduants-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:28px; }
 
       /* Schedule timeline */
       .schedule-list { position:relative; }
@@ -223,7 +223,7 @@ function GlobalStyles() {
         .nav-hamburger { display:block; }
         .section-pad { padding:64px 16px; }
         .hero-corner { display:none; }
-        .graduates-grid { grid-template-columns:1fr; }
+        .graduants-grid { grid-template-columns:1fr; }
         .schedule-line { left:72px; }
         .schedule-time { width:72px; font-size:10px; padding-right:12px; }
         .schedule-dot { left:68px; }
@@ -240,7 +240,7 @@ function GlobalStyles() {
         .section-pad { padding:80px 32px; }
         .campus-grid { grid-template-columns:1fr; }
         .campus-main { height:360px; }
-        .graduates-grid { grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); }
+        .graduants-grid { grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); }
         .videos-grid { grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); }
       }
     `}</style>
@@ -272,7 +272,7 @@ function SectionHeading({ label, title }: { label: string; title: string }) {
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false)
   const links = [
-    { href: '#graduates', label: 'Graduates' },
+    { href: '#graduants', label: 'graduants' },
     { href: '#schedule', label: 'Schedule' },
     { href: '#videos', label: 'AI Classes' },
     { href: '#campus', label: 'Campus' },
@@ -362,12 +362,12 @@ function Hero() {
         </p>
 
         <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <a href="#graduates"
+          <a href="#graduants"
             style={{ background: GOLD, color: BG_DARK, padding: '14px 28px', fontWeight: 700, fontSize: 12, letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', transition: 'background 0.2s, transform 0.2s', display: 'inline-block', whiteSpace: 'nowrap' }}
             onMouseEnter={e => { e.currentTarget.style.background = '#dbb85c'; e.currentTarget.style.transform = 'translateY(-2px)' }}
             onMouseLeave={e => { e.currentTarget.style.background = GOLD; e.currentTarget.style.transform = 'translateY(0)' }}
           >
-            Meet Our Graduates
+            Meet Our graduants
           </a>
           <a href="#schedule"
             style={{ background: 'transparent', color: GOLD, padding: '14px 28px', fontWeight: 700, fontSize: 12, letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', border: `1px solid ${GOLD}`, transition: 'background 0.2s, transform 0.2s', display: 'inline-block', whiteSpace: 'nowrap' }}
@@ -382,14 +382,14 @@ function Hero() {
   )
 }
 
-// ── Graduates ──────────────────────────────────────────────────────────────────
-function Graduates() {
+// ── graduants ──────────────────────────────────────────────────────────────────
+function graduants() {
   return (
-    <section id="graduates" className="section-pad" style={{ background: BG_PANEL }}>
+    <section id="graduants" className="section-pad" style={{ background: BG_PANEL }}>
       <div style={{ maxWidth: 1200, margin: '0 auto' }}>
-        <SectionHeading label="Class of 2025/2026" title="Our Graduates" />
-        <div className="graduates-grid">
-          {GRADUATES.map(g => (
+        <SectionHeading label="Class of 2025/2026" title="Our graduants" />
+        <div className="graduants-grid">
+          {graduants.map(g => (
             <article key={g.id}
               style={{ background: `linear-gradient(160deg, ${BG_CARD}, #0d1526)`, border: `1px solid ${GOLD_DIM}`, overflow: 'hidden', transition: 'transform 0.3s, border-color 0.3s, box-shadow 0.3s' }}
               onMouseEnter={e => { const el = e.currentTarget as HTMLElement; el.style.transform = 'translateY(-6px)'; el.style.borderColor = GOLD_MID; el.style.boxShadow = '0 20px 60px rgba(201,168,76,0.08)' }}
@@ -746,8 +746,8 @@ function QRGenerator() {
 
 // ── Footer ─────────────────────────────────────────────────────────────────────
 function Footer() {
-  const links = ['Graduates', 'Schedule', 'AI Classes', 'Campus', 'XO Game', 'GitHub', 'QR Code']
-  const hrefs = ['#graduates', '#schedule', '#videos', '#campus', '#game', '#github', '#qr']
+  const links = ['graduants', 'Schedule', 'AI Classes', 'Campus', 'XO Game', 'GitHub', 'QR Code']
+  const hrefs = ['#graduants', '#schedule', '#videos', '#campus', '#game', '#github', '#qr']
   return (
     <footer style={{ background: '#050810', borderTop: `1px solid ${GOLD_DIM}`, padding: 'clamp(32px,6vw,52px) 24px', textAlign: 'center' }}>
       <p style={{ fontFamily: SERIF, color: GOLD, fontSize: 22, marginBottom: 10, fontWeight: 700 }}>Enzy Royal College</p>
@@ -780,7 +780,7 @@ export default function App() {
       <GlobalStyles />
       <Nav />
       <Hero />
-      <Graduates />
+      <graduants />
       <Schedule />
       <Videos />
       <Campus />
