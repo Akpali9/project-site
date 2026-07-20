@@ -13,6 +13,13 @@ const graduants = [
     dob: 'March 12, 2007',
     photo: 'https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=400&h=400&fit=crop&auto=format',
   },
+   {
+    id: 7,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: 'https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=400&h=400&fit=crop&auto=format',
+  },
   {
     id: 2,
     name: 'Esi Mensah',
@@ -358,7 +365,7 @@ function Hero() {
         </div>
 
         <p style={{ color: TEXT_MUTED, fontSize: 'clamp(11px, 2vw, 14px)', letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: 44 }}>
-          20th July 2026 &nbsp;·&nbsp; Main Ceremonial Hall
+          25th July 2026 &nbsp;·&nbsp; Campus 2 Hall
         </p>
 
         <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
