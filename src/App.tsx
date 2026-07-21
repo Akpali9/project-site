@@ -8,6 +8,21 @@ import grad3 from './images/graduant3.jpg'
 import grad4 from './images/graduant4.jpg'
 import grad5 from './images/graduant5.jpg'
 import grad6 from './images/graduant6.jpg'
+import grad7 from './images/graduant6.jpg'
+import grad8 from './images/graduant6.jpg'
+import grad9 from './images/graduant6.jpg'
+import grad10 from './images/graduant6.jpg'
+import grad11 from './images/graduant6.jpg'
+import grad12 from './images/graduant6.jpg' 
+import grad13 from './images/graduant6.jpg'
+import grad14 from './images/graduant6.jpg'
+import grad15 from './images/graduant6.jpg'
+import grad16 from './images/graduant6.jpg'
+import grad17 from './images/graduant6.jpg'
+import grad18 from './images/graduant6.jpg'
+import grad19 from './images/graduant6.jpg'
+import grad20 from './images/graduant6.jpg'
+
 
 import libraryImg from './images/library.jpg'
 import labImg from './images/lab.jpg'
@@ -30,12 +45,104 @@ const graduants = [
     dob: 'March 12, 2007',
     photo: grad1,
   },
+   {
+    id: 10,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad10,
+  },
+   {
+    id: 11,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad11,
+  },
+  {
+    id: 12,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad12,
+  },
+  {
+    id: 13,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad13,
+  },
+  {
+    id: 14,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad14,
+  },
+  {
+    id: 15,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad15,
+  },
+  {
+    id: 16,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad16,
+  },
+  {
+    id: 17,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad17,
+  },
+  {
+    id: 18,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad18,
+  },
+  {
+    id: 19,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad19,
+  },
+  {
+    id: 20,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad20,
+  },
+  
+   {
+    id: 8,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad8,
+  },
+   {
+    id: 9,
+    name: 'Amara Osei',
+    aspiration: 'AI Engineer at a global tech firm',
+    dob: 'March 12, 2007',
+    photo: grad9,
+  },
   {
     id: 7,
     name: 'Amara Osei',
     aspiration: 'AI Engineer at a global tech firm',
     dob: 'March 12, 2007',
-    photo: grad1, // duplicate – you can replace with another image if needed
+    photo: grad7,
   },
   {
     id: 2,
