@@ -8,20 +8,20 @@ import grad3 from './images/graduant3.jpeg'
 import grad4 from './images/graduant4.jpeg'
 import grad5 from './images/graduant5.jpeg'
 import grad6 from './images/graduant6.jpeg'
-import grad7 from './images/graduant6.jpeg'
-import grad8 from './images/graduant6.jpeg'
-import grad9 from './images/graduant6.jpeg'
-import grad10 from './images/graduant6.jpeg'
-import grad11 from './images/graduant6.jpeg'
-import grad12 from './images/graduant6.jpeg' 
-import grad13 from './images/graduant6.jpeg'
-import grad14 from './images/graduant6.jpeg'
-import grad15 from './images/graduant6.jpeg'
-import grad16 from './images/graduant6.jpeg'
-import grad17 from './images/graduant6.jpeg'
-import grad18 from './images/graduant6.jpeg'
-import grad19 from './images/graduant6.jpeg'
-import grad20 from './images/graduant6.jpeg'
+import grad7 from './images/graduant7.jpeg'
+import grad8 from './images/graduant8.jpeg'
+import grad9 from './images/graduant9.jpeg'
+import grad10 from './images/graduant10.jpeg'
+import grad11 from './images/graduant11.jpeg'
+import grad12 from './images/graduant12.jpeg' 
+import grad13 from './images/graduant13.jpeg'
+import grad14 from './images/graduant14.jpeg'
+import grad15 from './images/graduant15.jpeg'
+import grad16 from './images/graduant16.jpeg'
+import grad17 from './images/graduant17.jpeg'
+import grad18 from './images/graduant18.jpeg'
+import grad19 from './images/graduant19.jpeg'
+import grad20 from './images/graduant20.jpeg'
 
 
 import libraryImg from './images/library.jpg'
@@ -202,23 +202,23 @@ const SCHEDULE = [
 const AI_VIDEOS = [
   {
     id: 'local1',
-    title: 'Neural Networks: Zero to Hero',
-    channel: 'Andrej Karpathy',
-    description: 'Building a character-level language model entirely from scratch — exactly what we explored in class.',
+    title: ' ',
+    channel: ' ',
+    description: ' ',
     src: aiVideo1,
   },
   {
     id: 'local2',
-    title: 'But what is a Neural Network?',
-    channel: '3Blue1Brown',
-    description: 'The visual intuition behind neural networks that made everything click for us.',
+    title: ' ',
+    channel: ' ',
+    description: ' ',
     src: aiVideo2,
   },
   {
     id: 'local3',
-    title: 'Machine Learning for Everyone',
-    channel: 'StatQuest',
-    description: 'Clear, fun explainers on the core ML algorithms we applied in our AI projects.',
+    title: ' ',
+    channel: ' ',
+    description: ' ',
     src: aiVideo3,
   },
 ]
