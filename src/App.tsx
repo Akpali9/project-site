@@ -25,8 +25,8 @@ import grad20 from './images/graduant6.jpeg'
 
 
 import libraryImg from './images/library.jpg'
-import labImg from './images/lab.jpeg'
-import classroomImg from './images/classroom.jpeg'
+import labImg from './images/lab.jpg'
+import classroomImg from './images/classroom.jpg'
 
 // ── Import local videos ──────────────────────────────────────────────────────
 import aiVideo1 from './images/ai-video1.mp4'
