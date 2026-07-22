@@ -228,7 +228,7 @@ const SCHOOL_PHOTOS = [
   {
     label: 'Library',
     url: libraryImg,
-    caption: 'Our state-of-the-art library — a sanctuary for curious minds',
+    caption: 'Our library — a sanctuary for curious minds',
   },
   {
     label: 'Science Lab',
