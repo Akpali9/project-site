@@ -168,7 +168,7 @@ const graduants = [
   {
     id: 5,
     name: 'Obinna Adaeze Cynthia',
-    aspiration: 'Tech Entrepreneur & Startup Founder',
+    aspiration: 'A Physiotherapist',
     dob: 'March 5, 2011',
     photo: grad5,
   },
