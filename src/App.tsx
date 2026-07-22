@@ -167,16 +167,16 @@ const graduants = [
   },
   {
     id: 5,
-    name: 'Yaw Adjei',
+    name: 'Obinna Adaeze Cynthia',
     aspiration: 'Tech Entrepreneur & Startup Founder',
-    dob: 'April 3, 2008',
+    dob: 'March 5, 2011',
     photo: grad5,
   },
   {
     id: 6,
-    name: 'Akosua Boateng',
-    aspiration: 'Cybersecurity Analyst & Researcher',
-    dob: 'September 8, 2007',
+    name: 'Okoye Blossom',
+    aspiration: 'A Renowned Lawyer ',
+    dob: 'November 23, 2010',
     photo: grad6,
   },
 ]
