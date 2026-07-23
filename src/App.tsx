@@ -181,7 +181,7 @@ const graduants = [
   },
 ]
 
-const schedule = [
+const SCHEDULE = [
   { time: '1', event: 'Arrival of Guests', icon: '👥' },
   { time: '2', event: 'Arrival of the Proprietress & Director', icon: '👑' },
   { time: '3', event: 'Academic Procession by the Grandaunts', icon: '🎓' },
