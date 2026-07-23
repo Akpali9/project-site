@@ -23,7 +23,6 @@ import grad18 from './images/graduant18.jpeg'
 import grad19 from './images/graduant19.jpeg'
 import grad20 from './images/graduant20.jpeg'
 
-
 import libraryImg from './images/library.jpg'
 import labImg from './images/lab.jpg'
 import classroomImg from './images/classroom.jpg'
@@ -38,147 +37,26 @@ type Square = 'X' | 'O' | null
 
 // ── Data ───────────────────────────────────────────────────────────────────────
 const graduants = [
-  {
-    id: 1,
-    name: 'Ugochukwu Ngozi Francisca',
-    aspiration: 'A Translator',
-    dob: 'April 2, 2009',
-    photo: grad1,
-  },
-   {
-    id: 10,
-    name: 'Anene Chikasi',
-    aspiration: 'A Computer Engineer  ',
-    dob: 'July 21, 2007',
-    photo: grad10,
-  },
-   {
-    id: 11,
-    name: 'Emegha David',
-    aspiration: 'An Instrumentalist ',
-    dob: 'December  22, 2009',
-    photo: grad11,
-  },
-  {
-    id: 12,
-    name: 'Anachebe Rita Nmesoma ',
-    aspiration: 'A Renowned Gynacologist ',
-    dob: 'January  6, 2010',
-    photo: grad12,
-  },
-  {
-    id: 13,
-    name: 'Okwudili-Nwokoye Chimamanda Jennifer ',
-    aspiration: 'An Engineer ',
-    dob: 'October  2, 2009',
-    photo: grad13 ,
-  },
-  {
-    id: 14,
-    name: 'Izuoba Fabian ',
-    aspiration: 'A Successful Entrepreneur',
-    dob: 'August  12, 2010',
-    photo: grad14 ,
-  },
-  {
-    id: 15,
-    name: 'Osegbo Victor',
-    aspiration: 'A Software Engineer',
-    dob: 'August  21, 2008',
-    photo: grad15,
-  },
-  {
-    id: 16,
-    name: 'Okechukwu Faithful Chisimdi',
-    aspiration: 'A Nurse ',
-    dob: 'June 1, 2007',
-    photo: grad16,
-  },
-  {
-    id: 17,
-    name: 'Edeh Elizabeth Nneoma',
-    aspiration: 'A Nurse',
-    dob: 'August  7, 2008',
-    photo: grad17,
-  },
-  {
-    id: 18,
-    name: 'Osunde Andre',
-    aspiration: 'A Successful Business man',
-    dob: 'August 12, 2009',
-    photo: grad18,
-  },
-  {
-    id: 19,
-    name: 'Akolonye Treasure Chinecherem',
-    aspiration: 'A Pharmaceutical Scientist',
-    dob: 'October  12, 2011',
-    photo: grad19,
-  },
-  {
-    id: 20,
-    name: 'Benneth Awesome ',
-    aspiration: 'A Medical Doctor ',
-    dob: 'September 14, 2009',
-    photo: grad20,
-  },
-  
-   {
-    id: 8,
-    name: 'Nwakutere Daniel',
-    aspiration: 'AI Engineer',
-    dob: 'June 15, 2009',
-    photo: grad8,
-  },
-   {
-    id: 9,
-    name: 'Onuzulike Makuo',
-    aspiration: 'A Lawyer ',
-    dob: 'March 23, 2009',
-    photo: grad9,
-  },
-  {
-    id: 7,
-    name: 'Okechukwu Divine ',
-    aspiration: 'A Software  Engineer',
-    dob: 'October 19, 2012',
-    photo: grad7,
-  },
-  {
-    id: 2,
-    name: 'Okeke Pamela ',
-    aspiration: 'A Lawyer ',
-    dob: 'August 17, 2008',
-    photo: grad2,
-  },
-  {
-    id: 3,
-    name: 'Udekwe-Anthony David',
-    aspiration: 'Data Scientist & Machine Learning Researcher',
-    dob: 'August 24, 2010',
-    photo: grad3,
-  },
-  {
-    id: 4,
-    name: 'Obiayo Michael Ikenna',
-    aspiration: 'A chemical Engineer',
-    dob: 'August  25, 2010',
-    photo: grad4,
-  },
-  {
-    id: 5,
-    name: 'Obinna Adaeze Cynthia',
-    aspiration: 'A Physiotherapist',
-    dob: 'March 5, 2011',
-    photo: grad5,
-  },
-  {
-    id: 6,
-    name: 'Okoye Blossom',
-    aspiration: 'A Renowned Lawyer ',
-    dob: 'November 23, 2010',
-    photo: grad6,
-  },
+  { id: 1, name: 'Ugochukwu Ngozi Francisca', aspiration: 'A Translator', dob: 'April 2, 2009', photo: grad1 },
+  { id: 10, name: 'Anene Chikasi', aspiration: 'A Computer Engineer', dob: 'July 21, 2007', photo: grad10 },
+  { id: 11, name: 'Emegha David', aspiration: 'An Instrumentalist', dob: 'December 22, 2009', photo: grad11 },
+  { id: 12, name: 'Anachebe Rita Nmesoma', aspiration: 'A Renowned Gynacologist', dob: 'January 6, 2010', photo: grad12 },
+  { id: 13, name: 'Okwudili-Nwokoye Chimamanda Jennifer', aspiration: 'An Engineer', dob: 'October 2, 2009', photo: grad13 },
+  { id: 14, name: 'Izuoba Fabian', aspiration: 'A Successful Entrepreneur', dob: 'August 12, 2010', photo: grad14 },
+  { id: 15, name: 'Osegbo Victor', aspiration: 'A Software Engineer', dob: 'August 21, 2008', photo: grad15 },
+  { id: 16, name: 'Okechukwu Faithful Chisimdi', aspiration: 'A Nurse', dob: 'June 1, 2007', photo: grad16 },
+  { id: 17, name: 'Edeh Elizabeth Nneoma', aspiration: 'A Nurse', dob: 'August 7, 2008', photo: grad17 },
+  { id: 18, name: 'Osunde Andre', aspiration: 'A Successful Business man', dob: 'August 12, 2009', photo: grad18 },
+  { id: 19, name: 'Akolonye Treasure Chinecherem', aspiration: 'A Pharmaceutical Scientist', dob: 'October 12, 2011', photo: grad19 },
+  { id: 20, name: 'Benneth Awesome', aspiration: 'A Medical Doctor', dob: 'September 14, 2009', photo: grad20 },
+  { id: 8, name: 'Nwakutere Daniel', aspiration: 'AI Engineer', dob: 'June 15, 2009', photo: grad8 },
+  { id: 9, name: 'Onuzulike Makuo', aspiration: 'A Lawyer', dob: 'March 23, 2009', photo: grad9 },
+  { id: 7, name: 'Okechukwu Divine', aspiration: 'A Software Engineer', dob: 'October 19, 2012', photo: grad7 },
+  { id: 2, name: 'Okeke Pamela', aspiration: 'A Lawyer', dob: 'August 17, 2008', photo: grad2 },
+  { id: 3, name: 'Udekwe-Anthony David', aspiration: 'Data Scientist & Machine Learning Researcher', dob: 'August 24, 2010', photo: grad3 },
+  { id: 4, name: 'Obiayo Michael Ikenna', aspiration: 'A chemical Engineer', dob: 'August 25, 2010', photo: grad4 },
+  { id: 5, name: 'Obinna Adaeze Cynthia', aspiration: 'A Physiotherapist', dob: 'March 5, 2011', photo: grad5 },
+  { id: 6, name: 'Okoye Blossom', aspiration: 'A Renowned Lawyer', dob: 'November 23, 2010', photo: grad6 },
 ]
 
 const SCHEDULE = [
@@ -212,86 +90,26 @@ const SCHEDULE = [
   { time: '28', event: 'Closing Prayer', icon: '🙏' },
 ];
 
-// Now using local videos
 const AI_VIDEOS = [
-  {
-    id: 'local1',
-    title: 'What I am aspiring to be',
-    channel: ' ',
-    description: ' Student aiming to use the skills acquired in this program to solve problems in the society and create jobs',
-    src: aiVideo1,
-  },
-  {
-    id: 'local2',
-    title: 'Testimony ',
-    channel: ' ',
-    description: ' Student appreciating the school for this opportunity for her dream come true journey ',
-    src: aiVideo2,
-  },
-  {
-    id: 'local3',
-    title: ' AI, programming and Robotics time!',
-    channel: ' ',
-    description: 'Students eagerness to the program  ',
-    src: aiVideo3,
-  },
+  { id: 'local1', title: 'What I am aspiring to be', channel: '', description: 'Student aiming to use the skills acquired in this program to solve problems in the society and create jobs', src: aiVideo1 },
+  { id: 'local2', title: 'Testimony', channel: '', description: 'Student appreciating the school for this opportunity for her dream come true journey', src: aiVideo2 },
+  { id: 'local3', title: 'AI, programming and Robotics time!', channel: '', description: 'Students eagerness to the program', src: aiVideo3 },
 ]
 
-// Campus photos now use local images
 const SCHOOL_PHOTOS = [
-  {
-    label: 'Library',
-    url: libraryImg,
-    caption: 'Our library — a sanctuary for curious minds',
-  },
-  {
-    label: 'Science Lab',
-    url: labImg,
-    caption: 'Where hypotheses become discoveries',
-  },
-  {
-    label: 'Classroom',
-    url: classroomImg,
-    caption: 'Every great journey began right here',
-  },
+  { label: 'Library', url: libraryImg, caption: 'Our library — a sanctuary for curious minds' },
+  { label: 'Science Lab', url: labImg, caption: 'Where hypotheses become discoveries' },
+  { label: 'Classroom', url: classroomImg, caption: 'Every great journey began right here' },
 ]
 
 const GITHUB_STEPS = [
-  {
-    step: 1,
-    title: 'Visit GitHub.com',
-    detail: 'Open your browser and navigate to https://github.com. GitHub is where the world builds software — over 100 million developers call it home.',
-  },
-  {
-    step: 2,
-    title: 'Click "Sign Up"',
-    detail: 'Click the green "Sign up" button in the top-right corner of the homepage to begin creating your account.',
-  },
-  {
-    step: 3,
-    title: 'Enter Your Details',
-    detail: 'Provide your email address, create a strong password, and choose a unique username. This username will be your permanent developer identity.',
-  },
-  {
-    step: 4,
-    title: 'Verify Your Email',
-    detail: 'GitHub will send a verification email. Open it and click the confirmation link to activate your account and unlock all features.',
-  },
-  {
-    step: 5,
-    title: 'Complete Your Profile',
-    detail: 'Add a profile photo, a short bio, and your school or location. A complete profile opens more collaboration doors.',
-  },
-  {
-    step: 6,
-    title: 'Create Your First Repository',
-    detail: "Click \"New\" on your dashboard, name it \"hello-world\", tick \"Add a README file\", and click \"Create repository\". You're officially a developer!",
-  },
-  {
-    step: 7,
-    title: 'Explore & Contribute',
-    detail: 'Follow classmates, star projects you admire, and start pushing your own code. GitHub is your living portfolio — keep it active.',
-  },
+  { step: 1, title: 'Visit GitHub.com', detail: 'Open your browser and navigate to https://github.com. GitHub is where the world builds software — over 100 million developers call it home.' },
+  { step: 2, title: 'Click "Sign Up"', detail: 'Click the green "Sign up" button in the top-right corner of the homepage to begin creating your account.' },
+  { step: 3, title: 'Enter Your Details', detail: 'Provide your email address, create a strong password, and choose a unique username. This username will be your permanent developer identity.' },
+  { step: 4, title: 'Verify Your Email', detail: 'GitHub will send a verification email. Open it and click the confirmation link to activate your account and unlock all features.' },
+  { step: 5, title: 'Complete Your Profile', detail: 'Add a profile photo, a short bio, and your school or location. A complete profile opens more collaboration doors.' },
+  { step: 6, title: 'Create Your First Repository', detail: 'Click "New" on your dashboard, name it "hello-world", tick "Add a README file", and click "Create repository". You\'re officially a developer!' },
+  { step: 7, title: 'Explore & Contribute', detail: 'Follow classmates, star projects you admire, and start pushing your own code. GitHub is your living portfolio — keep it active.' },
 ]
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
@@ -307,6 +125,92 @@ function calculateWinner(squares: Square[]): Square {
     }
   }
   return null
+}
+
+function isBoardFull(squares: Square[]): boolean {
+  return squares.every(cell => cell !== null)
+}
+
+// ── AI logic ──────────────────────────────────────────────────────────────────
+function getEmptyIndices(squares: Square[]): number[] {
+  return squares.reduce<number[]>((acc, cell, idx) => cell === null ? [...acc, idx] : acc, [])
+}
+
+// Minimax algorithm (Hard difficulty)
+function minimax(squares: Square[], depth: number, isMaximizing: boolean): number {
+  const winner = calculateWinner(squares)
+  if (winner === 'O') return 10 - depth   // AI (O) wins
+  if (winner === 'X') return depth - 10   // Player (X) wins
+  if (isBoardFull(squares)) return 0
+
+  const empty = getEmptyIndices(squares)
+  if (isMaximizing) {
+    let best = -Infinity
+    for (const idx of empty) {
+      squares[idx] = 'O'
+      const score = minimax(squares, depth + 1, false)
+      squares[idx] = null
+      best = Math.max(best, score)
+    }
+    return best
+  } else {
+    let best = Infinity
+    for (const idx of empty) {
+      squares[idx] = 'X'
+      const score = minimax(squares, depth + 1, true)
+      squares[idx] = null
+      best = Math.min(best, score)
+    }
+    return best
+  }
+}
+
+function getBestMove(squares: Square[], difficulty: 'Easy' | 'Medium' | 'Hard'): number {
+  const empty = getEmptyIndices(squares)
+  if (empty.length === 0) return -1
+
+  // Easy: random move
+  if (difficulty === 'Easy') {
+    return empty[Math.floor(Math.random() * empty.length)]
+  }
+
+  // Medium: block player win or take own win, else random
+  if (difficulty === 'Medium') {
+    // Check if AI can win
+    for (const idx of empty) {
+      squares[idx] = 'O'
+      if (calculateWinner(squares) === 'O') {
+        squares[idx] = null
+        return idx
+      }
+      squares[idx] = null
+    }
+    // Block player win
+    for (const idx of empty) {
+      squares[idx] = 'X'
+      if (calculateWinner(squares) === 'X') {
+        squares[idx] = null
+        return idx
+      }
+      squares[idx] = null
+    }
+    // Otherwise random
+    return empty[Math.floor(Math.random() * empty.length)]
+  }
+
+  // Hard: minimax
+  let bestScore = -Infinity
+  let bestMove = empty[0]
+  for (const idx of empty) {
+    squares[idx] = 'O'
+    const score = minimax(squares, 0, false)
+    squares[idx] = null
+    if (score > bestScore) {
+      bestScore = score
+      bestMove = idx
+    }
+  }
+  return bestMove
 }
 
 // ── Design tokens ──────────────────────────────────────────────────────────────
@@ -326,7 +230,6 @@ const SANS = '"Inter", sans-serif'
 function GlobalStyles() {
   return (
     <style>{`
-      /* Nav */
       .nav-inner { max-width:1200px; margin:0 auto; padding:0 24px; display:flex; align-items:center; justify-content:space-between; height:62px; }
       .nav-links { display:flex; gap:28px; flex-wrap:wrap; align-items:center; }
       .nav-hamburger { display:none; background:none; border:1px solid ${GOLD_DIM}; color:${GOLD}; padding:6px 10px; cursor:pointer; font-size:18px; line-height:1; }
@@ -334,14 +237,8 @@ function GlobalStyles() {
       .nav-mobile-menu.open { display:flex; }
       .nav-mobile-link { color:${TEXT_CREAM}; font-size:13px; letter-spacing:0.1em; text-decoration:none; text-transform:uppercase; padding:16px 24px; border-bottom:1px solid rgba(201,168,76,0.08); transition:color 0.2s, background 0.2s; }
       .nav-mobile-link:hover { color:${GOLD}; background:rgba(201,168,76,0.06); }
-
-      /* Sections */
       .section-pad { padding:100px 24px; }
-
-      /* graduants */
       .graduants-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:28px; }
-
-      /* Schedule timeline */
       .schedule-list { position:relative; }
       .schedule-line { position:absolute; left:112px; top:12px; bottom:12px; width:1px; background:linear-gradient(180deg,transparent,${GOLD_MID} 8%,${GOLD_MID} 92%,transparent); }
       .schedule-row { display:flex; align-items:flex-start; margin-bottom:24px; position:relative; }
@@ -349,25 +246,13 @@ function GlobalStyles() {
       .schedule-dot { position:absolute; left:108px; top:14px; width:9px; height:9px; border-radius:50%; background:${GOLD}; border:2px solid ${BG_DARK}; box-shadow:0 0 10px rgba(201,168,76,0.7); z-index:1; }
       .schedule-content { flex:1; margin-left:28px; background:rgba(201,168,76,0.04); border:1px solid rgba(201,168,76,0.12); padding:14px 20px; transition:border-color 0.25s,background 0.25s; }
       .schedule-content:hover { border-color:${GOLD_MID}; background:rgba(201,168,76,0.08); }
-
-      /* Campus */
       .campus-grid { display:grid; grid-template-columns:3fr 2fr; gap:32px; align-items:start; }
       .campus-main { position:relative; height:480px; background:${BG_CARD}; overflow:hidden; }
-
-      /* Videos */
       .videos-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:28px; }
-
-      /* Hero corners */
       .hero-corner { position:absolute; width:80px; height:80px; }
-
-      /* GitHub steps */
       .gh-step { display:flex; gap:24px; background:rgba(201,168,76,0.03); border:1px solid ${GOLD_DIM}; padding:24px 28px; transition:border-color 0.3s,background 0.3s; }
       .gh-step:hover { border-color:${GOLD_MID}; background:rgba(201,168,76,0.06); }
-
-      /* Scoreboard */
       .scoreboard { display:flex; gap:16px; margin-bottom:32px; justify-content:center; }
-
-      /* ── Mobile ≤ 640px ── */
       @media (max-width:640px) {
         .nav-links { display:none; }
         .nav-hamburger { display:block; }
@@ -384,8 +269,6 @@ function GlobalStyles() {
         .gh-step { padding:18px 16px; gap:16px; }
         .scoreboard { gap:10px; }
       }
-
-      /* ── Tablet 641–1024px ── */
       @media (min-width:641px) and (max-width:1024px) {
         .section-pad { padding:80px 32px; }
         .campus-grid { grid-template-columns:1fr; }
@@ -438,7 +321,6 @@ function Nav() {
             ENZY ROYAL COLLEGE
           </span>
         </a>
-        {/* Desktop links */}
         <div className="nav-links">
           {links.map(l => (
             <a key={l.href} href={l.href}
@@ -450,12 +332,10 @@ function Nav() {
             </a>
           ))}
         </div>
-        {/* Hamburger */}
         <button className="nav-hamburger" onClick={() => setMenuOpen(o => !o)} aria-label="Toggle menu">
           {menuOpen ? '✕' : '☰'}
         </button>
       </div>
-      {/* Mobile dropdown */}
       <div className={`nav-mobile-menu${menuOpen ? ' open' : ''}`}>
         {links.map(l => (
           <a key={l.href} href={l.href} className="nav-mobile-link" onClick={() => setMenuOpen(false)}>
@@ -475,7 +355,6 @@ function Hero() {
       background: `radial-gradient(ellipse at 60% 40%, rgba(201,168,76,0.06) 0%, transparent 60%), linear-gradient(160deg, #0a0e1a 0%, #0e1830 50%, #0a0e1a 100%)`,
       overflow: 'hidden',
     }}>
-      {/* Corner ornaments — hidden on mobile via CSS */}
       <div className="hero-corner" style={{ top: 40, left: 40, borderTop: `1px solid ${GOLD_MID}`, borderLeft: `1px solid ${GOLD_MID}` }} />
       <div className="hero-corner" style={{ top: 40, right: 40, borderTop: `1px solid ${GOLD_MID}`, borderRight: `1px solid ${GOLD_MID}` }} />
       <div className="hero-corner" style={{ bottom: 40, left: 40, borderBottom: `1px solid ${GOLD_MID}`, borderLeft: `1px solid ${GOLD_MID}` }} />
@@ -487,30 +366,24 @@ function Hero() {
           <span style={{ color: GOLD, fontSize: 26, lineHeight: 1 }}>✦</span>
           <div style={{ flex: 1, maxWidth: 140, height: 1, background: `linear-gradient(90deg, ${GOLD}, transparent)` }} />
         </div>
-
         <p style={{ fontFamily: SERIF, color: GOLD, fontSize: 13, letterSpacing: '0.3em', textTransform: 'uppercase', marginBottom: 20, fontStyle: 'italic' }}>
           Class of 2025 / 2026
         </p>
-
         <h1 style={{ fontFamily: SERIF, fontSize: 'clamp(2rem, 8vw, 5.2rem)', lineHeight: 1.08, color: TEXT_CREAM, fontWeight: 900, marginBottom: 16 }}>
           Welcome to<br />
           <span style={{ color: GOLD }}>Enzy Royal College</span>
         </h1>
-
         <h2 style={{ fontFamily: SERIF, fontSize: 'clamp(1rem, 3vw, 1.75rem)', color: TEXT_MID, fontWeight: 400, fontStyle: 'italic', marginBottom: 32 }}>
           2025 / 2026 Graduation Ceremony
         </h2>
-
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 16, marginBottom: 28 }}>
           <div style={{ flex: 1, maxWidth: 140, height: 1, background: `linear-gradient(90deg, transparent, ${GOLD})` }} />
           <span style={{ color: GOLD, fontSize: 26, lineHeight: 1 }}>✦</span>
           <div style={{ flex: 1, maxWidth: 140, height: 1, background: `linear-gradient(90deg, ${GOLD}, transparent)` }} />
         </div>
-
         <p style={{ color: TEXT_MUTED, fontSize: 'clamp(11px, 2vw, 14px)', letterSpacing: '0.22em', textTransform: 'uppercase', marginBottom: 44 }}>
           25th July 2026 &nbsp;·&nbsp; Campus 2 Hall
         </p>
-
         <div style={{ display: 'flex', gap: 14, justifyContent: 'center', flexWrap: 'wrap' }}>
           <a href="#graduants"
             style={{ background: GOLD, color: BG_DARK, padding: '14px 28px', fontWeight: 700, fontSize: 12, letterSpacing: '0.15em', textTransform: 'uppercase', textDecoration: 'none', transition: 'background 0.2s, transform 0.2s', display: 'inline-block', whiteSpace: 'nowrap' }}
@@ -604,7 +477,7 @@ function Schedule() {
   )
 }
 
-// ── AI Videos (uses local video files) ───────────────────────────────────────
+// ── AI Videos ─────────────────────────────────────────────────────────────────
 function Videos() {
   const [activeId, setActiveId] = useState<string | null>(null)
 
@@ -632,9 +505,6 @@ function Videos() {
                     style={{ position: 'absolute', inset: 0, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#0a0e1a' }}
                     onClick={() => setActiveId(v.id)}
                   >
-                    {/* You can add a poster image here if you have one: 
-                        <img src={v.poster} alt="..." style={{ position:'absolute', inset:0, width:'100%', height:'100%', objectFit:'cover', opacity:0.5 }} /> 
-                    */}
                     <div style={{ position: 'relative', zIndex: 1, width: 60, height: 60, borderRadius: '50%', background: 'rgba(201,168,76,0.92)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 24px rgba(201,168,76,0.4)', transition: 'transform 0.2s' }}
                       onMouseEnter={e => (e.currentTarget.style.transform = 'scale(1.1)')}
                       onMouseLeave={e => (e.currentTarget.style.transform = 'scale(1)')}
@@ -667,7 +537,6 @@ function Campus() {
       <div style={{ maxWidth: 1100, margin: '0 auto' }}>
         <SectionHeading label="Our School" title="Campus Highlights" />
         <div className="campus-grid">
-          {/* Main image */}
           <div className="campus-main">
             <img
               key={selected}
@@ -681,7 +550,6 @@ function Campus() {
             </div>
           </div>
 
-          {/* Thumbnails + quote */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: 12 }}>
             {SCHOOL_PHOTOS.map((p, i) => (
               <div key={i} onClick={() => setSelected(i)}
@@ -713,33 +581,164 @@ function Campus() {
   )
 }
 
-// ── XO Game ────────────────────────────────────────────────────────────────────
+// ── XO Game with AI levels ────────────────────────────────────────────────────
 function XOGame() {
+  // Game state
   const [squares, setSquares] = useState<Square[]>(Array(9).fill(null))
-  const [xIsNext, setXIsNext] = useState(true)
+  const [xIsNext, setXIsNext] = useState(true) // true = X's turn (player), false = O's turn (AI)
   const [scores, setScores] = useState({ X: 0, O: 0 })
+  const [gameMode, setGameMode] = useState<'player' | 'computer'>('computer')
+  const [difficulty, setDifficulty] = useState<'Easy' | 'Medium' | 'Hard'>('Medium')
+  const [isAIThinking, setIsAIThinking] = useState(false)
 
   const winner = calculateWinner(squares)
-  const isDraw = !winner && squares.every(Boolean)
+  const isDraw = !winner && isBoardFull(squares)
 
-  const handleClick = (i: number) => {
-    if (squares[i] || winner || isDraw) return
-    const next = [...squares]
-    next[i] = xIsNext ? 'X' : 'O'
-    setSquares(next)
-    setXIsNext(!xIsNext)
-    const w = calculateWinner(next)
-    if (w) setScores(prev => ({ ...prev, [w]: prev[w as 'X' | 'O'] + 1 }))
+  // Reset board (keep scores)
+  const resetBoard = () => {
+    setSquares(Array(9).fill(null))
+    setXIsNext(true)
+    setIsAIThinking(false)
   }
 
-  const reset = () => { setSquares(Array(9).fill(null)); setXIsNext(true) }
+  // Full reset (scores too)
+  const resetGame = () => {
+    setSquares(Array(9).fill(null))
+    setXIsNext(true)
+    setScores({ X: 0, O: 0 })
+    setIsAIThinking(false)
+  }
 
-  const statusMsg = winner ? `Player ${winner} wins!` : isDraw ? 'Draw — well played!' : `Player ${xIsNext ? 'X' : 'O'}'s turn`
+  // Handle player move (X always player)
+  const handlePlayerMove = (i: number) => {
+    if (squares[i] || winner || isDraw || isAIThinking) return
+    if (gameMode === 'computer' && !xIsNext) return // not player's turn
+    if (gameMode === 'player' && !xIsNext) return   // two‑player mode
+
+    const next = [...squares]
+    next[i] = 'X'
+    setSquares(next)
+    const w = calculateWinner(next)
+    if (w) {
+      setScores(prev => ({ ...prev, X: prev.X + 1 }))
+      setXIsNext(false) // no further moves
+      return
+    }
+    if (isBoardFull(next)) {
+      setXIsNext(false)
+      return
+    }
+    setXIsNext(false) // switch to O's turn
+
+    // If computer mode and O is AI, trigger AI move after delay
+    if (gameMode === 'computer') {
+      setIsAIThinking(true)
+      setTimeout(() => {
+        makeAIMove(next)
+      }, 300)
+    }
+  }
+
+  // AI move (O)
+  const makeAIMove = (currentSquares: Square[]) => {
+    // Check if the game is already over
+    if (calculateWinner(currentSquares) || isBoardFull(currentSquares)) {
+      setIsAIThinking(false)
+      return
+    }
+
+    const empty = getEmptyIndices(currentSquares)
+    if (empty.length === 0) {
+      setIsAIThinking(false)
+      return
+    }
+
+    const bestIdx = getBestMove(currentSquares, difficulty)
+    if (bestIdx === -1) {
+      setIsAIThinking(false)
+      return
+    }
+
+    const next = [...currentSquares]
+    next[bestIdx] = 'O'
+    setSquares(next)
+
+    const w = calculateWinner(next)
+    if (w) {
+      setScores(prev => ({ ...prev, O: prev.O + 1 }))
+      setIsAIThinking(false)
+      setXIsNext(true) // reset for next game? Actually we keep turn to true for next game
+      return
+    }
+    if (isBoardFull(next)) {
+      setIsAIThinking(false)
+      setXIsNext(true)
+      return
+    }
+
+    // Switch back to player's turn
+    setXIsNext(true)
+    setIsAIThinking(false)
+  }
+
+  // Handle click on square (delegates to player move)
+  const handleClick = (i: number) => {
+    if (gameMode === 'player') {
+      // Two‑player: alternate between X and O
+      if (squares[i] || winner || isDraw || isAIThinking) return
+      const next = [...squares]
+      next[i] = xIsNext ? 'X' : 'O'
+      setSquares(next)
+      const w = calculateWinner(next)
+      if (w) {
+        setScores(prev => ({ ...prev, [w]: prev[w as 'X' | 'O'] + 1 }))
+      }
+      setXIsNext(!xIsNext)
+    } else {
+      // Computer mode: only handle X moves
+      handlePlayerMove(i)
+    }
+  }
+
+  const statusMsg = winner ? `Player ${winner} wins!` : isDraw ? 'Draw — well played!' : gameMode === 'computer' && isAIThinking ? 'Computer is thinking...' : `Player ${xIsNext ? 'X' : 'O'}'s turn`
 
   return (
     <section id="game" className="section-pad" style={{ background: BG_PANEL }}>
-      <div style={{ maxWidth: 480, margin: '0 auto', textAlign: 'center' }}>
+      <div style={{ maxWidth: 520, margin: '0 auto', textAlign: 'center' }}>
         <SectionHeading label="Play" title="XO Game" />
+
+        {/* Game controls */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, justifyContent: 'center', marginBottom: 24, background: BG_CARD, padding: 16, border: `1px solid ${GOLD_DIM}` }}>
+          <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
+            <span style={{ color: TEXT_MUTED, fontSize: 12, letterSpacing: '0.1em' }}>Mode:</span>
+            <button
+              onClick={() => setGameMode('player')}
+              style={{ background: gameMode === 'player' ? GOLD : 'transparent', color: gameMode === 'player' ? BG_DARK : TEXT_MID, border: `1px solid ${gameMode === 'player' ? GOLD : GOLD_DIM}`, padding: '6px 14px', cursor: 'pointer', fontSize: 12, fontWeight: 700, transition: 'all 0.2s' }}
+            >
+              vs Player
+            </button>
+            <button
+              onClick={() => setGameMode('computer')}
+              style={{ background: gameMode === 'computer' ? GOLD : 'transparent', color: gameMode === 'computer' ? BG_DARK : TEXT_MID, border: `1px solid ${gameMode === 'computer' ? GOLD : GOLD_DIM}`, padding: '6px 14px', cursor: 'pointer', fontSize: 12, fontWeight: 700, transition: 'all 0.2s' }}
+            >
+              vs Computer
+            </button>
+          </div>
+          {gameMode === 'computer' && (
+            <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
+              <span style={{ color: TEXT_MUTED, fontSize: 12, letterSpacing: '0.1em' }}>Difficulty:</span>
+              {['Easy', 'Medium', 'Hard'].map(level => (
+                <button
+                  key={level}
+                  onClick={() => setDifficulty(level as typeof difficulty)}
+                  style={{ background: difficulty === level ? GOLD : 'transparent', color: difficulty === level ? BG_DARK : TEXT_MID, border: `1px solid ${difficulty === level ? GOLD : GOLD_DIM}`, padding: '6px 14px', cursor: 'pointer', fontSize: 12, fontWeight: 700, transition: 'all 0.2s' }}
+                >
+                  {level}
+                </button>
+              ))}
+            </div>
+          )}
+        </div>
 
         <div className="scoreboard">
           {(['X', 'O'] as const).map(p => (
@@ -763,13 +762,13 @@ function XOGame() {
                   height: 'clamp(72px, 20vw, 100px)',
                   background: sq ? 'rgba(201,168,76,0.07)' : 'rgba(201,168,76,0.03)',
                   border: `1px solid ${sq ? GOLD_MID : 'rgba(201,168,76,0.15)'}`,
-                  cursor: sq || winner || isDraw ? 'not-allowed' : 'pointer',
+                  cursor: sq || winner || isDraw || isAIThinking ? 'not-allowed' : 'pointer',
                   fontSize: 'clamp(28px,8vw,38px)', fontWeight: 900,
                   color: sq === 'X' ? GOLD : TEXT_CREAM, fontFamily: SERIF,
                   transition: 'background 0.2s, border-color 0.2s',
                   display: 'flex', alignItems: 'center', justifyContent: 'center',
                 }}
-                onMouseEnter={e => { if (!sq && !winner && !isDraw) { (e.currentTarget as HTMLElement).style.background = 'rgba(201,168,76,0.12)'; (e.currentTarget as HTMLElement).style.borderColor = GOLD_MID } }}
+                onMouseEnter={e => { if (!sq && !winner && !isDraw && !isAIThinking) { (e.currentTarget as HTMLElement).style.background = 'rgba(201,168,76,0.12)'; (e.currentTarget as HTMLElement).style.borderColor = GOLD_MID } }}
                 onMouseLeave={e => { if (!sq) { (e.currentTarget as HTMLElement).style.background = 'rgba(201,168,76,0.03)'; (e.currentTarget as HTMLElement).style.borderColor = 'rgba(201,168,76,0.15)' } }}
               >
                 {sq}
@@ -777,13 +776,22 @@ function XOGame() {
             ))}
           </div>
 
-          <button onClick={reset}
-            style={{ background: GOLD, color: BG_DARK, padding: '13px 40px', border: 'none', cursor: 'pointer', fontSize: 12, letterSpacing: '0.18em', textTransform: 'uppercase', fontWeight: 700, transition: 'background 0.2s, transform 0.2s', width: '100%' }}
-            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#dbb85c'; (e.currentTarget as HTMLElement).style.transform = 'translateY(-1px)' }}
-            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = GOLD; (e.currentTarget as HTMLElement).style.transform = 'translateY(0)' }}
-          >
-            New Game
-          </button>
+          <div style={{ display: 'flex', gap: 12 }}>
+            <button onClick={resetBoard}
+              style={{ flex: 1, background: GOLD, color: BG_DARK, padding: '13px 20px', border: 'none', cursor: 'pointer', fontSize: 12, letterSpacing: '0.18em', textTransform: 'uppercase', fontWeight: 700, transition: 'background 0.2s, transform 0.2s' }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = '#dbb85c'; (e.currentTarget as HTMLElement).style.transform = 'translateY(-1px)' }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = GOLD; (e.currentTarget as HTMLElement).style.transform = 'translateY(0)' }}
+            >
+              New Game
+            </button>
+            <button onClick={resetGame}
+              style={{ flex: 1, background: 'transparent', color: GOLD, padding: '13px 20px', border: `1px solid ${GOLD}`, cursor: 'pointer', fontSize: 12, letterSpacing: '0.18em', textTransform: 'uppercase', fontWeight: 700, transition: 'background 0.2s, transform 0.2s' }}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = 'rgba(201,168,76,0.08)'; (e.currentTarget as HTMLElement).style.transform = 'translateY(-1px)' }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = 'transparent'; (e.currentTarget as HTMLElement).style.transform = 'translateY(0)' }}
+            >
+              Reset Scores
+            </button>
+          </div>
         </div>
       </div>
     </section>
