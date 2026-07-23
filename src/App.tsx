@@ -181,22 +181,36 @@ const graduants = [
   },
 ]
 
-const SCHEDULE = [
-  { time: '08:00 AM', event: 'Arrival & Guest Registration', icon: '🎓' },
-  { time: '09:00 AM', event: 'Welcome Address by the Principal', icon: '🎤' },
-  { time: '09:30 AM', event: 'National Anthem & School Hymn', icon: '🎵' },
-  { time: '10:00 AM', event: 'Keynote Address', icon: '📢' },
-  { time: '10:45 AM', event: 'Academic Awards Presentation', icon: '🏆' },
-  { time: '11:30 AM', event: 'Graduation Procession', icon: '🎓' },
-  { time: '12:30 PM', event: 'Lunch Break', icon: '🍽️' },
-  { time: '02:00 PM', event: 'Student Testimonials', icon: '💬' },
-  { time: '02:30 PM', event: 'AI Class Showcase', icon: '🤖' },
-  { time: '03:00 PM', event: 'Cultural Performances & Entertainment', icon: '🎭' },
-  { time: '04:00 PM', event: 'Valedictorian Address', icon: '⭐' },
-  { time: '04:30 PM', event: 'Certificate Presentation Ceremony', icon: '📜' },
-  { time: '05:30 PM', event: 'Closing Remarks & Benediction', icon: '🙏' },
-  { time: '06:00 PM', event: 'Reception & Networking', icon: '🥂' },
-]
+const schedule = [
+  { time: '1', event: 'Arrival of Guests', icon: '👥' },
+  { time: '2', event: 'Arrival of the Proprietress & Director', icon: '👑' },
+  { time: '3', event: 'Academic Procession by the Grandaunts', icon: '🎓' },
+  { time: '4', event: 'National Anthem', icon: '🇳🇬' },
+  { time: '5', event: 'Anambra State Anthem', icon: '🏛️' },
+  { time: '6', event: 'School Anthem', icon: '🎵' },
+  { time: '7', event: 'Opening Prayer', icon: '🙏' },
+  { time: '8', event: 'Welcome Address by the Proprietress (Big Aunty)', icon: '🎤' },
+  { time: '9', event: 'Address by the Principal', icon: '📢' },
+  { time: '10', event: 'Cultural Dance Display', icon: '💃' },
+  { time: '11', event: 'Graduation News Bulletin (Grade 7)', icon: '📰' },
+  { time: '12', event: 'Desiderata Recitation by Madonna Obiayo', icon: '📖' },
+  { time: '13', event: 'Drama Presentation by Grade 8B', icon: '🎭' },
+  { time: '14', event: 'Special Musical Performance by Grade 9', icon: '🎶' },
+  { time: '15', event: 'Ballet Performance', icon: '🩰' },
+  { time: '16', event: 'Hip-hop Dance by Grade 10', icon: '🕺' },
+  { time: '17', event: 'Bible Presentation', icon: '📚' },
+  { time: '18', event: 'Drama Presentation by Enzy Royal Creative Arts', icon: '🎬' },
+  { time: '19', event: 'Debate: Formal Education is More Valuable than Skill Acquisition (Grade 11)', icon: '🗣️' },
+  { time: '20', event: 'Science Exhibition', icon: '🧪' },
+  { time: '21', event: 'Artificial Intelligence (AI) & Robotics Exhibition', icon: '🤖' },
+  { time: '22', event: 'Valedictory Speech (Graduating Student)', icon: '⭐' },
+  { time: '23', event: 'Presentation by Graduating Students', icon: '🎁' },
+  { time: '24', event: 'Cutting of Graduation Cake', icon: '🎂' },
+  { time: '25', event: 'Presentation of Academic Awards', icon: '🏆' },
+  { time: '26', event: 'Refreshments', icon: '🍽️' },
+  { time: '27', event: 'Vote of Thanks', icon: '🤝' },
+  { time: '28', event: 'Closing Prayer', icon: '🙏' },
+];
 
 // Now using local videos
 const AI_VIDEOS = [
