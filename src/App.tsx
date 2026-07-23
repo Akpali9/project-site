@@ -216,23 +216,23 @@ const SCHEDULE = [
 const AI_VIDEOS = [
   {
     id: 'local1',
-    title: ' ',
+    title: 'What I am aspiring to be',
     channel: ' ',
-    description: ' ',
+    description: ' Student aiming to use the skills acquired in this program solve problems in the society and create jobs',
     src: aiVideo1,
   },
   {
     id: 'local2',
-    title: ' ',
+    title: 'Testimony ',
     channel: ' ',
-    description: ' ',
+    description: ' Student appreciating the school for this opportunity for her dream come true journey ',
     src: aiVideo2,
   },
   {
     id: 'local3',
-    title: ' ',
+    title: ' AI, programming and Robotics time!',
     channel: ' ',
-    description: ' ',
+    description: 'Students eagerness to the program  ',
     src: aiVideo3,
   },
 ]
