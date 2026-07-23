@@ -218,7 +218,7 @@ const AI_VIDEOS = [
     id: 'local1',
     title: 'What I am aspiring to be',
     channel: ' ',
-    description: ' Student aiming to use the skills acquired in this program solve problems in the society and create jobs',
+    description: ' Student aiming to use the skills acquired in this program to solve problems in the society and create jobs',
     src: aiVideo1,
   },
   {
